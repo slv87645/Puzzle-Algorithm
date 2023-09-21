@@ -12,7 +12,6 @@ def solve_puzzle(board, source, destination):
             direction = []
             while (curr_x, curr_y) in parent:
                 path.insert(0, (curr_x, curr_y))
-                # extra credit, add checks for direction
                 # up 0 -> 1
                 if curr_x < parent[(curr_x, curr_y)][0]:
                     direction.insert(0,'U')
